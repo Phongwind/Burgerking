@@ -110,6 +110,7 @@ nav {
   }
 
 .meal-1 {
+    display: flex;
     justify-content: space-around;
     margin-left: 5%;
     padding-top: 5%;
@@ -120,8 +121,9 @@ nav {
     height: 293px;
 }
 
-.heading-1 {
-    margin-left: 15%;
+.content-1 {
+    padding-left: 10%;
+    padding-right: 15%;
 }
 
 .conten-meal-1 {
