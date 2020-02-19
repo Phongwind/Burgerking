@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:light&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <img src="img/banner_web-01_2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/banner_web_3.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/banner_web_49k_1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/banner_web_group_combo_3.jpg" style="width:100%">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+        </script>
+    
+    
+    <nav>
+        <img class="logo" src="https://burgerking.vn/skin/frontend/bk2/default/images/logo.png"/>
+        <a class="nav-item" href="/index.html#">Home</a>
+        <a class="nav-item" href="/menu.html#">Menu</a>
+    </nav>
+
+    
+        <br>
+        
+        <div class="meal-1">
+            <img class="burger-1" src="/img/burger_1.png"/>
+            <div class="heading-1">
+                <h1>Burgerking's® 2 for $5 is too hot to last</h1>
+            </div>
+
+            <div class="conten-meal-1">
+                Choose either a Dave’s Single®, Spicy Chicken, or a 10 PC. Nugg and then choose another one. It’s a great deal no matter what you choose. It’s the choosing that’s tricky. And it’s only here for a limited time, so best get to deciding.
+            </div>
+        </div>
+        
+        <div class="contents">
+            <div>
+                <h1>
+                    GREAT FOOD COMES FIRST
+                </h1>                
+
+                <p>
+                    Every day, more than 11 million guests visit BURGER KING®️ restaurants around the world. And they do so because our restaurants are known for serving high-quality, great-tasting, and affordable food. Founded in 1954, BURGER KING®️ is the second largest fast food hamburger chain in the world. The original HOME OF THE WHOPPER®️, our commitment to premium ingredients, signature recipes, and family-friendly dining experiences is what has defined our brand for more than 50 successful years.
+
+                </p>
+            </div>
+                <h1>
+                    3G CAPITAL
+                </h1>                
+
+                <p>
+                    In 2010, 3G Capital, a global multi-million dollar investment firm focused on long term value creation, purchased Burger King Corporation, making it a privately-held company. To learn more about 3G Capital, click here.
+                         
+                </p>
+            <div>
+
+            </div>
+                <h1>
+                    CONTACT
+                </h1>                
+
+                <p>
+                    Phone Number: 1-866-394-2493
+                </p>    
+            <div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            Burger King<br>
+            TM & © 2019 Burger King Corporation. All Rights Reserved.<br>
+        </div>
+
+        <div>
+            Contact Email: info@burgerking.vn<br>
+            Phone: 090 2299 3333<br>
+            Location: 952 Nguyễn Văn Linh R16-1 Hưng Vượng 3 P, Quận 7, Hồ Chí Minh
+        </div>
+    </footer>
+</body>
+</html>
